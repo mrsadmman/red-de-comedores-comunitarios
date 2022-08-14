@@ -1,0 +1,15 @@
+{
+  "name": "red-de-comedores-comunitarios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "purgecss --css css/custom.css --content index.html -o css/reducido.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

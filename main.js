@@ -37,7 +37,12 @@ const comedor3 = new Comedor("Doña Tota", 60, "Villa Fiorito");
 let menuSeleccionado = "";
 const comedores = [comedor1, comedor2, comedor3];
 
-// SELECCIONE MENU
+let botDon1 = document.getElementById("don1");
+let botDon2 = document.getElementById("don2");
+let botDon3 = document.getElementById("don3");
+
+botDon2.innerHTML = "<h2>Gracias Por donar!</h2>";
+/* // SELECCIONE MENU
 while ((menuSeleccionado = menu()) != 0) {
   switch (menuSeleccionado) {
     case 1:
@@ -133,4 +138,4 @@ while ((menuSeleccionado = menu()) != 0) {
       alert("Menu incorrecto, vuelva a intentarlo");
       break;
   }
-}
+} */

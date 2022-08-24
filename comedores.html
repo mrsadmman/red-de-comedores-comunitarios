@@ -53,11 +53,22 @@
     </nav>
     <!-- FORMULARIO -->
     <form id="formulario" class="row g-3 container-fluid">
-      <input id="nombre" type="text" class="form-control" />
-      <input id="cantidad" type="number" class="form-control" />
-      <input id="direc" type="text" class="form-control" placeholder="Av. 9 de Julio" />
-      <input type="text" class="form-control" />
-      <button type="submit" class="btn btn-dark">Guardar</button>
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Nombre del Comedor</label>
+        <input id="nombreComedor" type="text" class="form-control" />
+      </div>
+      <div class="col-md-3">
+        <label for="inputPassword4" class="form-label">Comensales</label>
+        <input id="cantidad" type="number" class="form-control" />
+      </div>
+      <div class="col-md-4">
+        <label for="inputAddress" class="form-label">Direccion</label>
+        <input id="direc" type="text" class="form-control" placeholder="Av. 9 de Julio" />
+      </div>
+
+      <div class="col-12">
+        <button id="btnGuardar" type="submit" class="btn btn-dark">Guardar</button>
+      </div>
     </form>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

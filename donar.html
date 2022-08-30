@@ -61,11 +61,28 @@
       calculo de cuanto equivale 1 vianda, aqui te dejamos mas info para que veas en que nos basamos
     </h3>
 
-    <h2>Listado de productos</h2>
+    <div class="container">
+      <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+          <h2>Carrito</h2>
+          <!-- Elementos del carrito -->
+          <ul id="carrito" class="list-group"></ul>
+          <hr />
+          <!-- Precio total -->
+          <p class="text-right">Total: <span id="total"></span> Viandas</p>
+          <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+      </div>
+    </div>
+    <!-- DONAR 1 -->
+    <!-- <h2>Listado de productos</h2>
     <div id="div-comedores"></div>
     <h2>En carro</h2>
-    <div id="div-donaciones">NO HAY NADA EN EL CARRO</h3></div>
-
+    <div id="div-donaciones">NO HAY NADA EN EL CARRO</h3></div> -->
+    <!-- DONAR 1 -->
     <!-- CARDS -->
     <!-- <div class="row">
       <div class="col-sm-4 position-absolute top-50 start-0 translate-middle-y">
@@ -105,6 +122,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script src="donar.js"></script>
+    <script src="donar2.js"></script>
   </body>
 </html>

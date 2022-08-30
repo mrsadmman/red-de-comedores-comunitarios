@@ -1,7 +1,14 @@
+class Comedor {
+  constructor(nombre, cantidad, ubic) {
+    this.nombre = nombre.toUpperCase();
+    this.cantidad = parseInt(cantidad);
+    this.ubic = ubic;
+  }
+}
 /* AGREGAR UN NUEVO COMEDOR  PESTAÑA COMEDORES*/
 const miFormulario = document.getElementById('formulario');
 
-const nombreComedor = document.getElementById('nombreComedor');
+const nombreComedorr = document.getElementById('nombreComedor');
 const cantidad = document.getElementById('cantidad');
 const direc = document.getElementById('direc');
 const btnGuardar = document.getElementById('btnGuardar');
@@ -9,6 +16,7 @@ const btnGuardar = document.getElementById('btnGuardar');
 const nuevoComedor = [];
 
 btnGuardar.addEventListener('click', agregarComedor);
+
 
 function agregarComedor(e) {
   //Cancelamos el comportamiento del evento
@@ -29,9 +37,11 @@ function agregarComedor(e) {
     alert('Completa el formulario');
   }
   const comedor4 = new Comedor(nombreComedor.value, cantidad.value, direc.value);
-  console.log(comedor4); //PONER EL FORMULARIO COMO OBJETO
-  nombreComedor.value = '';
+  const enJSON = JSON.stringify(comedor4);
+  console.log(enJSON); //PONER EL FORMULARIO COMO OBJETO
+  localStorage.setItem('comedor4', enJSON);
+  /* nombreComedor.value = '';
   cantidad.value = '';
-  direc.value = '';
+  direc.value = '';  */
 }
 /* AGREGAR UN NUEVO COMEDOR  PESTAÑA COMEDORES */

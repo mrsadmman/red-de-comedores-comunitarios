@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "nombre": "El Gomero",
+    "precio": 1,
+    "ubicacion": "Barrancas de Belgrano",
+    "comensales": 50,
+    "imagen": "./images/logos/elgomero.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "CCC",
+    "precio": 1,
+    "comensales": 70,
+    "ubicacion": "Barrio Mitre",
+    "imagen": "./images/logos/ccc.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "La Poderosa Fatima",
+    "precio": 1,
+    "ubicacion": "Villa Fatima",
+    "comensales": 90,
+
+    "imagen": "./images/logos/lapoderosa.png"
+  },
+  {
+    "id": 4,
+    "nombre": "Don Segundo Sombra",
+    "precio": 1,
+    "comensales": 60,
+    "ubicacion": "Parque Patricios",
+    "imagen": "./images/logos/donsegundosombra.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Amanecer de Los Cartoneros",
+    "precio": 1,
+    "comensales": 120,
+    "ubicacion": "Parque Patricios",
+    "imagen": "./images/logos/cartoneros.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Pelusa",
+    "precio": 1,
+    "comensales": 100,
+    "ubicacion": "La Carbonilla",
+    "imagen": "./images/logos/pelusa.jpg"
+  }
+]

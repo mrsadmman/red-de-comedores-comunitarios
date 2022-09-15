@@ -47,28 +47,44 @@
     </nav>
     <!-- FORMULARIO -->
     <form id="formulario" class="row g-3 container-fluid">
+      <div class="col-md-3">
+        <label for="inputPassword4" class="form-label">Tu Nombre</label>
+        <input id="cantidad" type="text" class="form-control" name="name" />
+      </div>
+      <div class="col-md-3">
+        <label for="inputPassword4" class="form-label">Tu Email</label>
+        <input id="cantidad" type="email" class="form-control" name="email" />
+      </div>
       <div class="col-md-12">
         <label for="inputEmail4" class="form-label">Nombre del Comedor</label>
-        <input id="nombreComedor" type="text" class="form-control" />
+        <input id="nombreComedor" type="text" class="form-control" name="name2" />
       </div>
       <div class="col-md-3">
         <label for="inputPassword4" class="form-label">Comensales</label>
-        <input id="cantidad" type="number" class="form-control" />
+        <input id="cantidad" type="number" class="form-control" name="comensales" />
       </div>
       <div class="col-md-4">
-        <label for="inputAddress" class="form-label">Direccion</label>
-        <input id="direc" type="text" class="form-control" placeholder="Av. 9 de Julio" />
+        <label for="inputAddress" class="form-label">Ubicacion</label>
+        <input id="direc" type="text" class="form-control" placeholder="Av. 9 de Julio" name="location" />
       </div>
 
       <div class="col-12">
-        <button id="btnGuardar" type="submit" class="btn btn-dark">Guardar</button>
+        <input id="btnGuardar" type="submit" class="btn btn-dark"></input>
       </div>
     </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+      emailjs.init('lHLV0AAY00RoW0N_6');
+    </script>
+
     <script src="form.js"></script>
   </body>
 </html>

@@ -112,7 +112,9 @@ function renderizarCarrito() {
           DOMcarrito.appendChild(miNodo);
         });
         // Renderizamos el precio total en el HTML
-        DOMtotal.textContent = calcularTotal();
+        calcularTotal().then((total) => {
+          DOMtotal.textContent = total;
+        });
       });
     });
 }

@@ -166,7 +166,7 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
 renderizarCarrito();
-
+/* AGREGO UN SWEET ALERT */
 Swal.fire({
   title: 'Vianda',
   text: 'Cuando hablamos de vianda, estamos hablando de la compra de un monton de insumos para poder producirlas (Arroz, Salsa, Carne, Condimentos). Este monto puede verse afectado por el tan conocido efecto de INFLACION. El calculo de hoy es de $200 cada vianda',
